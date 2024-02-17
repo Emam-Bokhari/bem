@@ -1,0 +1,63 @@
+<!-- 
+    BEM:: Block, Element, Modifier
+    1. CSS specificity problem solve
+    2. CSS class names clashes problem solve
+    3. A common rules nedded 
+
+    Block:: 1. meaningful container/parent
+            2. letters,digits,dashes for naming block
+            3. use dash for more than two word
+    
+    Element:: 1. not meaningful like container/     parent but related to container/parent
+            2. letters,digits,dashes,underscores for naming element.
+            3. use dash for more than two word
+            4. syntex: block__element
+
+    Modifier:: 1. modify block/element (apperence,state)
+            2. letters,digits,dashes,underscores for naming modifier
+            3. use dash for more than two word
+            4. syntex: block/element--modifier
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem</title>
+    <link rel="stylesheet" href="bem.css">
+</head>
+
+<body>
+    <!-- Start Container -->
+    <div class="container">
+        <!-- card -->
+        <div class="card card--large">
+            <h2 class="card__title">Card Title</h2>
+            <p class="card__text">Card description goes here.</p>
+            <button class="btn card__btn card__btn--small">Card</button>
+        </div>
+
+        <!-- feedback -->
+        <div class="feedback feedback--medium">
+            <h2 class="feedback__title">Feedback Title</h2>
+            <p class="feedback__text">Feedback description goes here</p>
+            <button class="btn feedback__btn feedback__btn--large">Feedback</button>
+        </div>
+        <br>
+        <ul class="list" >
+            <li class="list__item">item1</li>
+            <li class="list__item" >
+                <img class="list__img"  src="https://placehold.co/300" alt="">
+            </li>
+            <li class="list__item" >item3</li>
+        </ul>
+    </div>
+    <!-- End Container -->
+
+
+</body>
+
+</html>
